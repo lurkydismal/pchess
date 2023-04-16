@@ -53,7 +53,7 @@ def display(players, playing, t, nextp):
 					)
 				screen.blit(text, (pos_x-fontsize/2, pos_y+((i)*(fontsize+linespace))) )
 			text = font.render(
-					f"{p}: {players[p]/1000:.3f} [s]",
+					f"{p}: {players[p]/1000:.3f} [s]{' '*3}",
 					True, xgcolor, bgcolor
 				)
 		screen.blit(text, (pos_x, pos_y+((i)*(fontsize+linespace))) )
