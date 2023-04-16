@@ -9,13 +9,16 @@ While the author recognizes Gliński's hexagonal chess variant is more suited fo
 
 ### Player colors
 
-Player colors are :
+Standard player colors are:
 
 * white
 * black
 * zebra
 
-The initial order is arbitrary and determined by the clock itself.
+The initial order is arbitrary and determined by the clock itself, once players have chosen their color (like they would in standard chess, only there are only two hands and one color is "dropped" behind the back of the referee[^ref].
+
+
+[^ref]: or whoever is holding the pieces when player chose their role ; history has shown that this little detail can be dealt with even when two players are competing against each other without any bloodshed or international scandals so we will stick with this. The *referee* takes three pawns (one of each color), mixes them behind their back, drops one, keep one i nthe left hand and one in the right hand so that one player can chose their color.
 
 When more than threee players are involved, a player's color (or color combination) is chosen so that all participants in the game have no trouble making the difference between each player. This may include clues such as Braille symbols, sound clues, or whatever else.
 
@@ -33,17 +36,28 @@ When involving more then two players, pchess **must** be played with a clock (st
 
 ## Board setup
 
-There are a variety of possible board setups and variations, my favorite is shown below and features three bishops and three knights for a very dynamic gameplay. The starting position is edge-based and differs only mildly from that of standard chess.
+There are a variety of possible board setups and variations, my favorite is shown below and features three bishops and three knights for a very dynamic gameplay. The starting position is edge-based and differs only mildly from that of standard chess : the backline is unchanged, the frontline only accepts another bishop (which can do no direct attack on any opponent), and theere is an optional "general" knight that adds lock-points so that it's basically better to *never* move (but really this is still chess so you *have* to move at one point or another).
 
 ![Board setup](game_setups/pchess_board-setup-3p.png)
 
-By reducing the number of pieces used, it is possible to accomodate up to 6 players in a  massive free-for-all warfare.
+By reducing the number of pieces used, it is possible to accomodate up to 6 (or even 12) players in a massive free-for-all warfare (with or without alliances).
 
 The `manual/` directory contains more info of piece movement and board setups.
 
+
+### Alternate board setups
+
+Since - beyond the aspect of the clock itself - the start position is not exactly relevant, it is totally accepted that Gliński, McCooey, or Shafran variants may coexist on the same board.
+
+Brusky and Vasa variants are excluded, bacause the arrangement of pieces does not match the board size.
+
+## Pawn promotion
+
+Basically happens when as pawn goes further than *"half"* the board (at least 8 cases, see *sectors* in `manual`.
+
 ## Win condition
 
-As there are a few variants of initial board setups, there also are a number of win conditions. Players can chose to declare the first player to get another in checkmate to be the winner (somehow encourages a parasitic-type of gameplay), or it may be deceided that the last playing remaining on the play field wins.
+As there are a few variants of initial board setups, there also are a number of win conditions. Players can chose to declare the first player to get another in checkmate to be the winner, or it may be decided that the last playing remaining on the play field wins.
 
 This must be decided at the game start, just like the allowed movement of knights and pawns in particular.
 
